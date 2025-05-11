@@ -1,41 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Equipe = (props) => {
-  return(
-    <div>
-      <Sobre username={props.nome} cargo={props.cargo} idade={props.idade}/>
-      <Social fb={props.Facebook}/>
-    <hr/>
-    </div>
-  );
+class Equipe extends Component{
+  render(){
+    return(
+      <div>
+        <Sobre nome={this.props.nome} cargo={this.props.cargo} idade={this.props.idade}/>
+        <Social />
+      <hr/>
+      </div>
+    );
+  }
 }
 
-const Social = (props) =>{
-  return(
-    <div>
-      <a href={props.fb}>Facebook</a>
-      <a>Linkedin</a>
-      <a>Youtube</a>
-    </div>
-  );
+class Sobre extends Component{
+  render(){
+    return(
+        <div>
+          <h2>Sou o {this.props.nome}</h2>
+          <h2>Cargo: {this.props.cargo}</h2>
+          <h2>Idade: {this.props.idade}</h2>
+        </div>
+    );
+  }
 }
 
-const Sobre = (props) => {
+const Social = () => {
   return(
     <div>
-        <h2>Olá, sou o {props.username}</h2>
-        <h3>Cargo: {props.cargo}</h3>
-        <h3>Idade: {props.idade}</h3>
+    <a>Facebook</a>
+    <a>Linkedin</a>
     </div>
-  );
+  )
 }
 
 function App(){
   return(
     <div>
       <h1>Conheça nosso equipe</h1>
-      <Equipe nome ="Lucas" cargo="programador" idade="29" Facebook="https://www.facebook.com"/>
-      <Equipe nome ="Matheus" cargo="designer" idade="18" Facebook="https://www.facebook.com"/>
+      <Equipe nome="Matheus" cargo="Programador" idade="24"/>
+      <Equipe nome="Matheus" cargo="Programador" idade="24"/>
     </div>
   );
 }
