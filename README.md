@@ -5,9 +5,6 @@ Este repositório reúne uma série de implementações e exercícios com React.
 O repositório está organizado de forma incremental, com cada funcionalidade sendo adicionada e aprimorada em commits específicos.
 
 # ✅ Funcionalidades Implementadas
-🧠 Compreensão de Props
-
-Uso básico de props em componentes funcionais e de classe.
 
 ## ⏱️ Componentes com Estado
 
