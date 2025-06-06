@@ -52,5 +52,7 @@ Hooks personalizados
 
 Integração com APIs externas
 
+Parte 2: [https://github.com/luchersou/React-JS-curso-1-2](https://github.com/luchersou/React-JS-curso-2-2)
+
 ## 👨‍💻 Autor
 Desenvolvido por Lucas Souza
